@@ -48,36 +48,11 @@
 
 <div class="container">
     <div class="content">
-
-        <div class="ad-box left" id="ad-left">
-            <div class="ad-close" onclick="closeAd('ad-left')">×</div>
-<script>
-  atOptions = {
-    'key' : '540294eec56fbe02dbcdfc98d8f0434c',
-    'format' : 'iframe',
-    'height' : 600,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://enoughprosperabsorbed.com/540294eec56fbe02dbcdfc98d8f0434c/invoke.js"></script>
         </div>
 
         <div id="ruffle" style="width:100%;height:100%;display:none;"></div>
         <iframe id="game-frame" class="game-iframe" allowfullscreen style="display:block;"></iframe>
 
-        <div class="ad-box right" id="ad-right">
-            <div class="ad-close" onclick="closeAd('ad-right')">×</div>
-<script>
-  atOptions = {
-    'key' : '540294eec56fbe02dbcdfc98d8f0434c',
-    'format' : 'iframe',
-    'height' : 600,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://enoughprosperabsorbed.com/540294eec56fbe02dbcdfc98d8f0434c/invoke.js"></script>
         </div>
 
     </div>
@@ -94,31 +69,6 @@ var cdnScript = document.createElement('script');
 cdnScript.src = 'https://unpkg.com/@ruffle-rs/ruffle';
 cdnScript.onerror = loadLocalRuffle;
 document.body.appendChild(cdnScript);
-</script>
-
-<script>
-function closeAd(adId) {
-    const ad = document.getElementById(adId);
-    if (!ad) return;
-    ad.style.display = 'none';
-    setTimeout(() => { ad.style.display = 'flex'; }, 300000);
-}
-
-document.querySelectorAll('.ad-close').forEach(btn => {
-    btn.addEventListener('click', function() {
-        closeAd(this.parentElement.id);
-    });
-});
-
-function removeAd(adId) {
-    const ad = document.getElementById(adId);
-    if (ad) ad.remove();
-}
-
-if (localStorage.getItem('Ads') === 'false') {
-    removeAd('ad-left');
-    removeAd('ad-right');
-}
 </script>
 
 <script>
