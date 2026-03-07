@@ -1,4 +1,4 @@
-if (localStorage.getItem("Ads") === null) {
+/*if (localStorage.getItem("Ads") === null) {
     localStorage.setItem("Ads", "true");
 }
 
@@ -19,3 +19,4 @@ setInterval(() => {
         });
     }
 }, 500);
+*/
