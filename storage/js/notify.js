@@ -41,7 +41,7 @@ function createNotification(message) {
     notification.appendChild(header);
 
     const messageSpan = document.createElement('div');
-    messageSpan.innerHTML = `US4 is discontinued. We recommend you export your data to US5. For help on exporting your data and getting to US5 go to <a href="${window.origin}/us5.html" target="_blank" style="color:#4da6ff; text-decoration:underline;">this page</a>.`;
+    messageSpan.innerHTML = ` US4 is discontinued. We have fixed US5 and are rebuilding with new links. Go to <a href="${window.origin}/us5.html" target="_blank" style="color:#4da6ff; text-decoration:underline;">this page</a> to export your data and find a US5 link.`;
     messageSpan.style.marginBottom = '20px';
     notification.appendChild(messageSpan);
 
